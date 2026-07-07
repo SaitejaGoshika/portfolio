@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiteja Goshika | AI & Full Stack Developer | Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Saiteja Goshika - AI & Full Stack Developer. Specialized in building intelligent, scalable software solutions with React, Node.js, and Machine Learning.">
+    <meta name="keywords"
+        content="Saiteja Goshika, AI Developer, Full Stack Developer, Software Engineer, Machine Learning, Computer Vision, React, Portfolio">
+    <meta name="author" content="Saiteja Goshika">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Saiteja Goshika | AI & Full Stack Developer">
+    <meta property="og:description"
+        content="AI & Machine Learning undergraduate with a focus on Full Stack Development and AI-powered applications. Check out my projects and experience!">
+    <meta property="og:image" content="assets/profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Saiteja Goshika | AI & Full Stack Developer">
+    <meta property="twitter:description"
+        content="AI & Machine Learning undergraduate with a focus on Full Stack Development and AI-powered applications. Check out my projects and experience!">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode"> <!-- Defaulting to Dark Mode as per accent/style preference -->
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- Background Ambient Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <span class="logo-code">&lt;</span>Saiteja<span class="logo-dot">.</span><span
+                    class="logo-code">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#experience" class="nav-link">Timeline</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Switcher Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle visual theme"
+                    title="Toggle visual theme">
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                </button>
+
+                <!-- Resume Button (Navbar) -->
+                <a href="assets/resume.pdf" class="btn btn-secondary nav-resume-btn"
+                    download="Saiteja_Goshika_Resume.pdf">
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Hi, my name is</span>
+                    <h1 class="hero-title">Saiteja Goshika</h1>
+                    <h2 class="hero-typewriter-container">
+                        I am a <span id="typewriter" class="typewriter-text"
+                            data-words='["AI & Full Stack Developer", "Software Engineer", "AI/ML Enthusiast"]'></span><span
+                            class="typewriter-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        AI & Machine Learning undergraduate at Vasavi College of Engineering. I build real-world
+                        AI-powered applications, solve algorithmic problems, and design full-stack systems.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">
+                            <span class="btn-text">View My Work</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="assets/resume.pdf" class="btn btn-outline" download="Saiteja_Goshika_Resume.pdf">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/SaitejaGoshika" target="_blank" rel="noopener noreferrer"
+                            class="social-link" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sai-teja-goshika/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:goshikasaiteja137@gmail.com" class="social-link" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919949383713" class="social-link" title="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-backdrop"></div>
+                    <div class="hero-image-container">
+                        <!-- Recruiter-friendly fallback URL for instant rendering, with local fallback note -->
+                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=400&h=400&auto=format&fit=crop"
+                            alt="Saiteja Goshika Profile Photo" class="hero-img"
+                            onerror="this.src='assets/profile.jpg';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-container">
+                        <p class="lead-text">
+                            I am a CS student at <strong>Vasavi College of Engineering</strong> focusing on
+                            <strong>Artificial Intelligence & Machine Learning</strong>.
+                        </p>
+                        <p>
+                            My development philosophy centers on creating software that is both technically sound and
+                            impactful in the real world. By combining modern web architectures (like React, Node.js, and
+                            Firebase) with intelligence backends, I bring automation and user-focused tools to life.
+                        </p>
+                        <p>
+                            Currently, I maintain a CGPA of <strong>8.83/10.0</strong>, actively participate in 24-hour
+                            AI hackathons, and enjoy refining my problem-solving skills on platforms like LeetCode. I am
+                            passionate about system design, AI innovation, and continuous integration.
+                        </p>
+
+                        <!-- Core Quick Facts -->
+                        <div class="about-facts">
+                            <div class="fact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Hyderabad, TS, India</span>
+                            </div>
+                            <div class="fact-item">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Available for Internships</span>
+                            </div>
+                            <div class="fact-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>Graduating in 2027</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements Counter Box -->
+                    <div class="about-stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3 class="stat-numberCount" data-target="400">0</h3>
+                            <p class="stat-label">LeetCode Solved</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-ranking-star"></i></div>
+                            <h3 class="stat-numberCount" data-target="1547">0</h3>
+                            <p class="stat-label">LeetCode Rating</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <h3 class="stat-numberCount" data-target="2">0</h3>
+                            <p class="stat-label">Hackathon Wins</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <h3 class="stat-numberCount" data-target="7">0</h3>
+                            <p class="stat-label">Certificates Earned</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Timelines -->
+        <section id="experience" class="timeline-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Timeline</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline-grid">
+                    <!-- Experience Column -->
+                    <div class="timeline-column">
+                        <h3 class="timeline-column-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2026</div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Web Development Virtual Intern</h4>
+                                    <h5 class="timeline-subtitle">Web Stack Academy</h5>
+                                    <ul class="timeline-bullets">
+                                        <li>Developed responsive web applications using React.js and Node.js.</li>
+                                        <li>Integrated REST APIs into frontend applications for modular data loading.
+                                        </li>
+                                        <li>Worked on frontend and backend development workflows and state
+                                            synchronization.</li>
+                                        <li>Performed testing, bug fixing, and cloud deployment procedures.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2025</div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">AI/ML Virtual Intern</h4>
+                                    <h5 class="timeline-subtitle">Kodacy</h5>
+                                    <ul class="timeline-bullets">
+                                        <li>Learned supervised and unsupervised machine learning concepts in Python.
+                                        </li>
+                                        <li>Built models, implemented neural networks, and performed structured model
+                                            evaluation.</li>
+                                        <li>Conducted data preprocessing, outlier removal, and feature engineering.</li>
+                                        <li>Explored basic AI deployment methods and pipeline building.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Education Column -->
+                    <div class="timeline-column">
+                        <h3 class="timeline-column-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2023 – 2027</div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Bachelor of Engineering (B.E.)</h4>
+                                    <h5 class="timeline-subtitle">Computer Science Engineering (AI & ML)</h5>
+                                    <p class="timeline-institution">Vasavi College of Engineering</p>
+                                    <div class="timeline-meta">
+                                        <span class="badge badge-accent">CGPA: 8.83 / 10.0</span>
+                                    </div>
+                                    <p class="timeline-details-title">Relevant Coursework:</p>
+                                    <div class="course-tags">
+                                        <span>Data Structures & Algorithms</span>
+                                        <span>DBMS</span>
+                                        <span>Operating Systems</span>
+                                        <span>Computer Networks</span>
+                                        <span>Artificial Intelligence</span>
+                                        <span>Machine Learning</span>
+                                        <span>Deep Learning</span>
+                                        <span>Computer Vision</span>
+                                        <span>Web Development</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2021 – 2023</div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Intermediate (MPC)</h4>
+                                    <h5 class="timeline-subtitle">Narayana Junior College</h5>
+                                    <div class="timeline-meta">
+                                        <span class="badge badge-accent">Percentage: 97.6%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2021</div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">SSC (Secondary School Certificate)</h4>
+                                    <h5 class="timeline-subtitle">T.S. Model School</h5>
+                                    <div class="timeline-meta">
+                                        <span class="badge badge-accent">GPA: 9.3 / 10.0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages & Foundations -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>C++ / C</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Machine Learning -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>AI & Machine Learning</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Machine Learning</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Deep Learning & NLP</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Computer Vision (OpenCV)</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Model Prep & Preprocessing</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Full Stack Tech</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>React.js & Vite</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Node.js & Express.js</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Tailwind CSS & CSS3</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info">
+                                    <span>Databases (MongoDB/SQL/Firestore)</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-progress" data-width="82%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Badges Wrap (General & Tools) -->
+                <div class="skills-badges-section">
+                    <h4 class="sub-skills-title">Other Skills, Tools & Platforms</h4>
+                    <div class="badge-container">
+                        <span class="badge-skill"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="badge-skill"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="badge-skill"><i class="fa-solid fa-code"></i> VS Code</span>
+                        <span class="badge-skill"><i class="fa-solid fa-fire"></i> Firebase</span>
+                        <span class="badge-skill"><i class="fa-solid fa-server"></i> Vercel</span>
+                        <span class="badge-skill"><i class="fa-solid fa-cloud-arrow-up"></i> Netlify</span>
+                        <span class="badge-skill"><i class="fa-solid fa-paper-plane"></i> Postman</span>
+                        <span class="badge-skill">Data Structures & Algorithms</span>
+                        <span class="badge-skill">Object-Oriented Programming (OOP)</span>
+                        <span class="badge-skill">REST APIs & Integrations</span>
+                        <span class="badge-skill">User Authentication (Firebase Auth)</span>
+                        <span class="badge-skill">System Design & Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+                    <button class="filter-btn" data-filter="fullstack">Web Development</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-card-image">
+                            <!-- Recruiter-friendly generic code illustration placeholder -->
+                            <img src="https://images.unsplash.com/photo-1618401471353-b98aedd07871?q=80&w=600&h=400&auto=format&fit=crop"
+                                alt="ResumeAI Project Illustration">
+                            <span class="project-badge">Featured AI Web Tool</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">ResumeAI — AI Resume Analyzer</h3>
+                            <p class="project-card-desc">
+                                A comprehensive AI tool that parses resumes, calculates real-time ATS match scores,
+                                detects missing industry keywords, and produces customized interview and improvement
+                                guides.
+                            </p>
+
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Vite</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Firestore</span>
+                                <span class="tech-tag">PDF.js</span>
+                            </div>
+
+                            <div class="project-metrics">
+                                <div class="metric-pill">
+                                    <i class="fa-solid fa-bolt"></i> ATS Compatibility
+                                </div>
+                                <div class="metric-pill">
+                                    <i class="fa-solid fa-shield-halved"></i> Firebase Auth
+                                </div>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/SaitejaGoshika" target="_blank" rel="noopener noreferrer"
+                                    class="project-link-item" title="View Source Code">
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                                <a href="#" class="project-link-item" title="Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="ai-ml">
+                        <div class="project-card-image">
+                            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=600&h=400&auto=format&fit=crop"
+                                alt="Eco Sort Project Illustration">
+                            <span class="project-badge">24h Hackathon Build</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Eco Sort — AI Waste Classifier</h3>
+                            <p class="project-card-desc">
+                                A custom machine learning and computer vision pipeline designed to recognize various
+                                waste materials and automate visual recycling classifications in real time.
+                            </p>
+
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">OpenCV</span>
+                            </div>
+
+                            <div class="project-metrics">
+                                <div class="metric-pill">
+                                    <i class="fa-solid fa-stopwatch"></i> Built in 24 Hours
+                                </div>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/SaitejaGoshika" target="_blank" rel="noopener noreferrer"
+                                    class="project-link-item">
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-card-image">
+                            <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=600&h=400&auto=format&fit=crop"
+                                alt="Playful AI Learning Tool Illustration">
+                            <span class="project-badge">AI Hackathon Project</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Playful AI Learning Tool</h3>
+                            <p class="project-card-desc">
+                                An interactive web application built to make childhood educational quizzes and
+                                vocabulary games exciting using dynamic content generations from intelligence APIs.
+                            </p>
+
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">AI APIs</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+
+                            <div class="project-metrics">
+                                <div class="metric-pill">
+                                    <i class="fa-solid fa-gamepad"></i> Gamified Quizzes
+                                </div>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/SaitejaGoshika" target="_blank" rel="noopener noreferrer"
+                                    class="project-link-item">
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="ai-ml">
+                        <div class="project-card-image">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&h=400&auto=format&fit=crop"
+                                alt="Attention Monitoring Illustration">
+                            <span class="project-badge">Research Work</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Classroom Attention Monitoring</h3>
+                            <p class="project-card-desc">
+                                Research project implementing facial posture algorithms, emotion vectors, and gaze
+                                tracking mechanisms using OpenCV to monitor attention indexes inside classrooms.
+                            </p>
+
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">ML Models</span>
+                            </div>
+
+                            <div class="project-metrics">
+                                <div class="metric-pill">
+                                    <i class="fa-solid fa-chart-line"></i> Real-time Analytics
+                                </div>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/SaitejaGoshika" target="_blank" rel="noopener noreferrer"
+                                    class="project-link-item">
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Activity Section -->
+        <section class="github-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">GitHub Contributions</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="github-graph-card">
+                    <div class="github-stats-meta">
+                        <div class="meta-profile">
+                            <i class="fa-brands fa-github"></i>
+                            <div>
+                                <h4>@SaitejaGoshika</h4>
+                                <p>Active developer & coding practitioner</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com/SaitejaGoshika" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-sm">
+                            Follow on GitHub
+                        </a>
+                    </div>
+
+                    <!-- Live github chart embed -->
+                    <div class="github-chart-container">
+                        <img src="https://ghchart.rshah.org/4f46e5/SaitejaGoshika"
+                            alt="Saiteja Goshika GitHub Contributions Chart" class="github-chart-img">
+                    </div>
+                    <div class="github-info-note">
+                        <i class="fa-solid fa-circle-info"></i> Activity chart loaded dynamically from active GitHub
+                        repository pushes.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements -->
+        <section class="achievements-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications & Achievements</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Achievements Column -->
+                    <div class="ach-col">
+                        <h3 class="ach-col-title"><i class="fa-solid fa-trophy-award"></i> Core Milestones</h3>
+                        <ul class="ach-list">
+                            <li>
+                                <div class="ach-badge-icon"><i class="fa-solid fa-code"></i></div>
+                                <div class="ach-item-content">
+                                    <h4>LeetCode DSA Solver</h4>
+                                    <p>Solved 400+ algorithmic coding questions covering dynamic programming, graph
+                                        trees, and arrays.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ach-badge-icon"><i class="fa-solid fa-ranking-star"></i></div>
+                                <div class="ach-item-content">
+                                    <h4>1547 Max LeetCode Rating</h4>
+                                    <p>Regularly participated in Biweekly and Weekly contests, sharpening efficiency
+                                        under real-time constraints.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ach-badge-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                                <div class="ach-item-content">
+                                    <h4>Double Hackathon Project Builds</h4>
+                                    <p>Built Eco Sort and Playful AI Learning Tool entirely during intense 24-hour
+                                        sprints, collaborating and deploying MVP models.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ach-badge-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="ach-item-content">
+                                    <h4>NPTEL Elite Grade</h4>
+                                    <p>Earned elite level certification in Object-Oriented Java Programming from NPTEL.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="ach-col">
+                        <h3 class="ach-col-title"><i class="fa-solid fa-certificate"></i> Certifications</h3>
+                        <div class="certifications-grid">
+
+                            <div class="cert-card">
+                                <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+                                <div class="cert-info">
+                                    <h4>Java Programming (Elite)</h4>
+                                    <p class="cert-org">NPTEL</p>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+                                <div class="cert-info">
+                                    <h4>AI & Machine Learning</h4>
+                                    <p class="cert-org">Infosys Springboard</p>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon"><i class="fa-solid fa-layer-group"></i></div>
+                                <div class="cert-info">
+                                    <h4>Deep Learning</h4>
+                                    <p class="cert-org">Infosys Springboard</p>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                                <div class="cert-info">
+                                    <h4>Python Programming</h4>
+                                    <p class="cert-org">Infosys Springboard</p>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                                <div class="cert-info">
+                                    <h4>Data Science Foundation</h4>
+                                    <p class="cert-org">Infosys Springboard</p>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon"><i class="fa-solid fa-comments"></i></div>
+                                <div class="cert-info">
+                                    <h4>Natural Language Processing</h4>
+                                    <p class="cert-org">Infosys Springboard</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra-Curricular / Volunteering Panel -->
+                <div class="extra-activities-card">
+                    <h4 class="extra-title"><i class="fa-solid fa-users-gear"></i> Leadership, Clubs & Activities</h4>
+                    <div class="extra-list">
+                        <div class="extra-item">
+                            <i class="fa-solid fa-camera"></i>
+                            <div>
+                                <h5>Photography Club Member</h5>
+                                <p>Capturing frames, learning creative camera controls, and lighting dynamics at college
+                                    conventions.</p>
+                            </div>
+                        </div>
+                        <div class="extra-item">
+                            <i class="fa-solid fa-video"></i>
+                            <div>
+                                <h5>Film Making Club Member</h5>
+                                <p>Working on screenplay editing, structural workflows, and storytelling in team-led
+                                    activities.</p>
+                            </div>
+                        </div>
+                        <div class="extra-item">
+                            <i class="fa-solid fa-flask-vial"></i>
+                            <div>
+                                <h5>Hackathon Enthusiast</h5>
+                                <p>Passionate about rapid prototype creation, collaborative team builds, and AI/ML model
+                                    integrations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Text Details Info -->
+                    <div class="contact-info-panel">
+                        <h3>Let's build something together!</h3>
+                        <p class="contact-intro">
+                            If you have a position open, a project idea, or just want to chat about AI/ML or full-stack
+                            software development, feel free to reach out. I will respond as soon as possible.
+                        </p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h5>Email</h5>
+                                    <a href="mailto:goshikasaiteja137@gmail.com">goshikasaiteja137@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="icon-wrap"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h5>Phone</h5>
+                                    <a href="tel:+919949383713">+91 9949383713</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="icon-wrap"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h5>Location</h5>
+                                    <span>Hyderabad, Telangana, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-pills">
+                            <a href="https://github.com/SaitejaGoshika" target="_blank" rel="noopener noreferrer"
+                                class="social-pill" title="GitHub">
+                                <i class="fa-brands fa-github"></i> @SaitejaGoshika
+                            </a>
+                            <a href="https://linkedin.com/in/sai-teja-goshika/" target="_blank"
+                                rel="noopener noreferrer" class="social-pill" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i> @sai-teja-goshika
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card">
+                        <!-- Defaulting to placeholder action, Formspree instruction details in README.md -->
+                        <form id="contact-form" action="https://formspree.io/f/placeholder-id" method="POST">
+                            <div class="form-group">
+                                <label for="form-name">Full Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" id="form-email" name="email" placeholder="johndoe@example.com"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-hashtag"></i>
+                                    <input type="text" id="form-subject" name="subject"
+                                        placeholder="Opportunity / Project Collaboration" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <div class="input-wrapper text-area-wrap">
+                                    <i class="fa-solid fa-comment-dots"></i>
+                                    <textarea id="form-message" name="message" rows="5"
+                                        placeholder="Hi Saiteja, I came across your profile and..." required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div id="form-status" class="form-status-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Saiteja Goshika. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top" title="Scroll back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>

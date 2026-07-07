@@ -1,0 +1,14 @@
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE/Editor folders
+.vscode/
+.idea/
+
+# Agent artifacts & caches
+.agents/
+.gemini/
+.antigravity/
+.antigravity-ide/
